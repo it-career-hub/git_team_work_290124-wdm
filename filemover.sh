@@ -12,16 +12,17 @@ echo  "Вы копируете файл из директории $source_direct
 read -p "Введите расширение файлов для копирования (без точки):" file_extension
 echo "Выбрано расширение файлов: $file_extension"
 
-# Проверка существования исходной директории
-check_directory() {
-if [ ! -d "$1" ]; then
-    echo "Директория $1 не существует или недоступна." 
-    exit 1
-            fi
-}
-# Проверка исходной и целевой директорий
-check_directory "$source_directory"
-check_directory "$target_directory"
+  # Проверка существования исходной директории
+   check_directory() {
+   if [ ! -d "$1" ]; then
+      echo "Директория $1 не существует или недоступна." 
+      exit 1
+             fi
+  }
+
+  # Проверка исходной и целевой директорий
+  check_directory "$source_directory"
+  check_directory "$target_directory"
 echo "Обе директории существуют и доступны."
 
 # Проверка, есть ли файлы с указанным расширением в исходной директории
