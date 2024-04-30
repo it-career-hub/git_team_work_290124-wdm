@@ -6,6 +6,7 @@ read -p "Введите исходную директорию: " source_director
 
 read -p "Введите путь к целевой директории: " target_directory
 
+echo  "Вы копируете файл из директории $source_directory в директорию $target_directory"
 
 # Запрос расширения файлов, которые нужно скопировать
 
