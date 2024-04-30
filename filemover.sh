@@ -13,4 +13,4 @@
 # Копирование файлов с указанным расширением в целевую директорию
 
 echo "Копирование файлов в $target_directory..."
-cp -r "$source_directory"/* "$target_directory" && echo "Копирование успешно завершено!"
+cp "$source_directory"/*."$file_extension" "$target_directory" && echo "Копирование успешно завершено!"
