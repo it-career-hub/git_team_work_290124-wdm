@@ -21,8 +21,8 @@ check_directory() {
     fi
 }
 # Проверка исходной и целевой директорий
-check_directory "$source_dir"
-check_directory "$target_dir"
+check_directory "$source_directory"
+check_directory "$target_directory"
 echo "Обе директории существуют и доступны."
 
 # Проверка, есть ли файлы с указанным расширением в исходной директории
